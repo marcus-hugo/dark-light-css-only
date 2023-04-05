@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Only Dark/Light Theme</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="highlight">CSS Only Dark/Light Theme</h1>
+    </header>
+    <main>
+      <h2 class="dimmed">...Is It Even Possible?</h2>
+      <p>My goal with this web project, is to impliment a dark/light theme with as little CSS as possible.</p>
+      <p><span class="highlight">*Browsers now support a default dark and light theme that can be turned on based on the users system theme.</span></p>
+
+      <h3>Here is the folder structure:</h3>
+      <pre>
+        -- project folder
+          -- index.html
+          -- style.css
+      </pre>
+      <h3>Here is the CSS:</h3>
+
+      <pre>
+        <code>
+          <span class="highlight">
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+</span> 
+  
+// For reset and basic styles
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 1rem;
+}
+h1 {
+  font-weight: 400;
+}
+
+h2,
+h3 {
+  font-weight: 300;
+}
+
+p {
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+header,
+main {
+  max-width: 65ch;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 1rem 0;
+  background: #171717;
+  text-align: center;
+}
+
+pre {
+  background: #2d2d2d;
+  color: #b3b9c5;
+  overflow-x: auto;
+  border-radius: 7px;
+  padding: 1rem;
+}
+
+.highlight {
+  color: lightblue;
+}
+
+.dimmed {
+  color: #d4d4d4;
+}
+        
+        </code>
+      </pre>
+      <p><span class="highlight">*The CSS that is highlighted lightblue is the main ingredient.</span> These rules,<span class="highlight">color-scheme: light</span> or <span class="highlight">color-scheme: dark</span> will change the page theme on their own, but, to honor the users system default setting we can have those rules inside a media query called <span class="highlight">prefers-color-scheme</span>. So, when the system is set to dark, the color-scheme will be set to dark and the same for light.</p>
+    </main>
+  </body>
+  <footer>
+    <small>2023 Marcus Hugo. Always made with 💗.</small>
+  </footer>
+</html>
+<span class="highlight"></span>

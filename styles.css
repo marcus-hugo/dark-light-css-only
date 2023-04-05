@@ -1,0 +1,62 @@
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+// For reset and basic styles
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 1rem;
+}
+h1 {
+  font-weight: 400;
+}
+
+h2,
+h3 {
+  font-weight: 300;
+}
+
+p {
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+header,
+main {
+  max-width: 65ch;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 1rem 0;
+  background: #171717;
+  text-align: center;
+}
+
+pre {
+  background: #2d2d2d;
+  color: #b3b9c5;
+  overflow-x: auto;
+  border-radius: 7px;
+  padding: 1rem;
+}
+
+.highlight {
+  color: lightblue;
+}
+
+.dimmed {
+  color: #d4d4d4;
+}
