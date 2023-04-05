@@ -18,7 +18,7 @@ Without adding a reset or styles, this is the css that makes it work `color-sche
 }
 ```
 
-The colors were inspired by Tailwind CSS and Tania Rascia's New Moon theme for VS Code.
+The colors for the code blocks were inspired by Tania Rascia's New Moon theme.
 here's a link [https://github.com/taniarascia/new-moon]
 
 Will build on this project for the next tutorial with a toggle switch and JavaScript to come soon...
