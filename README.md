@@ -2,7 +2,7 @@
 
 A simple webpage tutorial for a CSS only dark/light theme solution.
 
-Without adding a reset or styles, this is css that makes it work `color-scheme` and `prefers-color-scheme`, and together:
+Without adding a reset or styles, this is the css that makes it work `color-scheme` and `prefers-color-scheme`, and together:
 
 ```css
 @media (prefers-color-scheme: light) {
